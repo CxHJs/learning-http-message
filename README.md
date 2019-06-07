@@ -17,22 +17,49 @@ print('b')
 
 ## 実習でやったこと (Y)
 
-ここに書く
+HTTPレスポンスを確認してlessで見る
 
 ## 自分で調べたこと
 
-ここに書く
+HTTPで調べること
 
 ## HTTPメッセージ (kd.txt) のうち、最も重要だと思う部分を貼り付けてください
 
 ```
-ここに書く
+GET / HTTP/1.0 
+
+HTTP/1.0 200 OK　
+
+Date: Fri, 07 Jun 2019 01:37:34 GMT
+
+Server: Apache　　　　　　　　　　　　　　　　　　
+
+X-Cached: Fri, 07 Jun 2019 01:37:34 GMT
+
+X-Pingback: https:/xmlrpc.php
+
+Last-Modified: Fri, 07 Jun 2019 01:37:34 GMT
+
+X-Accel-Expires: 0
+                                              
+Cache-Control: max-age=300
+
+Expires: Fri, 07 Jun 2019 01:42:34 GMT
+
+Vary: Accept-Encoding
+
+Connection: close
+
+Content-Type: text/html; charset=UTF-8          
 ```
 
 ## それはなぜですか？
 
-ここに書く
+この部分はHTTPの基本だから
+GET / HTTP/1.0 はリクエスト行で
+HTTP/1.0 200 OK　はリスポンス行です
+Server: ApacheからContent-Type: text/html; charset=UTF-8まではメッセージヘッダーです。
 
 ## わかったこと・気づいたこと
 
-ここに書く
+HTTPの基本は大切です。
